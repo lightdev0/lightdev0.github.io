@@ -28,9 +28,9 @@
 			</center>
 
 			<h4>Step 1: Installing EA app</h4>
-			By default, setup does not work as attempting to install normally will always error out with INST-21-25006. This also applies when you're trying to update upon being forced to do so.<br><br>
+			By default, setup does not work as attempting to install normally will always error out with INST-21-25006.<br><br>
 			
-			This can be fixed copying the entire "Electronic Arts" install folder on your Windows 10/11 PC/VM and then paste it to the Program Files directory.<br>
+			This can be fixed copying the entire "Electronic Arts" install folder on your Windows 10/11 PC and then paste it to the "Program Files" directory.<br>
 			<h4 style="color: red">If your EA app was updated and has both the version and mklink folder, delete the EA Desktop mdlink, move the "EA Desktop" inside "13.XXXXX.XXXX-XXXXXXXXXX" folder to prior root and delete that version folder. It should look like this:</h4>
 			<img src="guide1.png" alt="Explorer directory"><br>
 			
@@ -40,11 +40,11 @@
 			
 			<h4>Step 3: Getting EA app to work</h4>
 			<h4>Method 1: Replacing system files (Windows 7 only)</h4>
-			This is a quick and dirty method that is suitable only for those who don't want to patch out the calls everytime and is running the final update (2026-01) released for Windows 7. Credit to EAZY BLACK for the files.<br><br>
+			This is a quick and dirty method that is suitable only for those who don't want to patch out the calls everytime and is running the final update (2026-01) released for Windows 7. This method also allows automatic updates to work properly, although you need to extract three DLLs found in the extracted folder everytime if there is a new update. Special thanks to EAZY BLACK for providing the files.<br><br>
 			From the same zip folder you extracted, go to Method 1 folder, and extract two files (kernel32.dll and k32_ex.dll) to the System32 folder.<br>
 			
 			<h4>Method 2: Manual patching</h4>
-			This method is suitable for those who are not conformable with replacing system files or is running Windows 8.0. Do note that you will need to repatch the program every time if there is a new update.<br><br>
+			This method is suitable for those who are not conformable with replacing system files or is running Windows 8.0. Do note that you will need to manually update the app by redoing Step 1 and repatching out the function calls on the executables.<br><br>
 
 			The following executables needs to be patched:<br>
 			<code>EALauncher.exe</code><br>
